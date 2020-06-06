@@ -11,13 +11,12 @@ collections:
   - name: pages
     label: Pages
     folder: src/data/pages
-    create: false
 
     fields: 
       - name: title
         label: Title
         default: about
-        widget: hidden
+        widget: string
 
       - name: content
         label: Content
