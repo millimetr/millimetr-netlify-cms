@@ -1,4 +1,4 @@
-# 🔌 millimetr-netlify-cms
+# 🧲 millimetr-netlify-cms
 
 **A millimetr starting template to be used with Netlify CMS**
 
