@@ -50,7 +50,11 @@ const getRoutes = async () => {
 
 const createConfig = async () => {
     const initialPagesArray = await getRoutes();
-    const menu = initialPagesArray.map(singleRoute => ({ title: singleRoute.title, url: singleRoute.url }));
+
+    const menu = initialPagesArray
+        .sort(({ title }) => title === 'Homepage' ? -1 : 0)
+        .map(singleRoute => ({ title: singleRoute.title, url: singleRoute.url }));
+
     const pagesArray = initialPagesArray.map(singleRoute => ({ ...singleRoute, menu }));
 
     return {

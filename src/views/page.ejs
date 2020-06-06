@@ -4,14 +4,16 @@
 
   <body>
     <nav>
-      <ul>
+      <ul class="menu">
         <% menu.forEach(menuItem => { %>
           <li>
-            <a href="<%= menuItem.url %>"><%= menuItem.title %></a>
+            <a class="menu-item" href="<%= menuItem.url %>"><%= menuItem.title %></a>
           </li>
         <% }); %>
       </ul>
     </nav>
+
+    <hr />
 
     <h1><%= title %></h1>
     <%- html %>

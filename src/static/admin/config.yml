@@ -18,6 +18,6 @@ collections:
         default: about
         widget: string
 
-      - name: content
+      - name: body
         label: Content
         widget: markdown
