@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <%- include('../includes/head', { title: 'Netlify CMS Example', description: 'This a page created by the millimetr Netlify CMS starter.'}) %>
+
+  <body>
+    <nav>
+      <ul>
+        <% menu.forEach(menuItem => { %>
+          <li>
+            <a href="<%= menuItem.url %>"><%= menuItem.title %></a>
+          </li>
+        <% }); %>
+      </ul>
+    </nav>
+
+    <h1><%= title %></h1>
+    <%- html %>
+  </body>
+</html>
