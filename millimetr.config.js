@@ -3,8 +3,6 @@ const { resolve: resolvePath } = require('path');
 const markdownIt = require('markdown-it')();
 const frontMatter = require('front-matter');
 
-const STARTERS_ARRAY = require('./src/data/starters.json');
-
 const CWD = process.cwd();
 const PAGES_PATH = './src/data/pages';
 
