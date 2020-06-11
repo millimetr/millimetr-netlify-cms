@@ -1,9 +1,9 @@
 ---
-title: Homepage
+title: 🧲 millimetr-netlify-cms
+url: /
+order: 1
 ---
 
-Ea nesciunt quia temporibus maxime assumenda nihil neque voluptatem. Repellat praesentium fugiat quae id qui itaque autem nobis. Aut asperiores dolore voluptate beatae voluptatem vel. Est fugit repudiandae atque. Dolore et nihil ut fuga expedita. Rerum aliquam quo beatae hic similique blanditiis quo.
+A millimetr starting template with [Netlify CMS](https://www.netlifycms.org/) integration.
 
-- List item 1
-- List item 2
-- List item 3
+_Note that the CSS selectors in this demo follow the [BEM convention](https://en.bem.info/methodology/css/#selectors). However you are welcome to restructure them according to your preferences._

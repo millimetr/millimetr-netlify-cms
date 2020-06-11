@@ -1,21 +1,19 @@
 <!doctype html>
-<html lang="en">
-  <%- include('../includes/head', { title: 'Netlify CMS Example', description: 'This a page created by the millimetr Netlify CMS starter.'}) %>
+
+<html lang="<%= millimetr.globals.language %>">
+  <%- include('../includes/head', { title: millimetr.globals.title, description: millimetr.globals.description }) %>
 
   <body>
-    <nav>
-      <ul class="menu">
-        <% menu.forEach(menuItem => { %>
-          <li>
-            <a class="menu-item" href="<%= menuItem.url %>"><%= menuItem.title %></a>
-          </li>
-        <% }); %>
-      </ul>
-    </nav>
+    <div class="layout">
+      <%- include('../includes/menu', { routes: millimetr.internals.routes.all, currentUrl: millimetr.internals.routes.active.url }) %>
 
-    <hr />
+      <main class="layout__content">
+        <h1><%= title %></h1>
 
-    <h1><%= title %></h1>
-    <%- html %>
+        <%- html %>
+      </main>
+
+      <%- include('../includes/footer') %>
+    </div>
   </body>
 </html>

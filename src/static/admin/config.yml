@@ -2,8 +2,7 @@ backend:
   name: github
   repo: millimetr/millimetr-netlify-cms
 
-display_url: millimetr Netlify CMS
-
+display_url: Millimetr Netlify CMS
 media_folder: src/static/media
 public_folder: /media
 
@@ -11,12 +10,23 @@ collections:
   - name: pages
     label: Pages
     folder: src/data/pages
+    create: true
 
     fields: 
       - name: title
         label: Title
         default: about
         widget: string
+
+      - name: url
+        label: URL
+        widget: string
+
+
+      - name: order
+        label: Order
+        widget: number
+
 
       - name: body
         label: Content
